@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url('/public/images/bg.png'); /* Replace with the actual path to your image */
+  background-size: cover; /* Adjust this property based on your needs */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: auto;
+  border-radius: 15px;
+
+}
+
+.logo:hover{
+ 
+  cursor: pointer;
+}
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 20px;
+  color: rgb(197, 204, 195);
+  font-weight: 500;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  
+
+}
+button:hover {
+  background-color:rgb(31, 197, 226);
+  cursor: pointer;
+  color: black;
+  transform: scale(1.2);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+ li {
+  margin: 10px;
+  transform: scale(1);
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  color: aliceblue;
+}
+
+ li:hover {
+  transform: scale(1.2); /* Scale up on hover */
+  background-color: antiquewhite;
+  color: black;
+  border: 2px solid rgb(223, 99, 99);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 80px;
+}
+.hero h1 {
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+  color: rgb(0, 0, 0);
+}
+.hero p {
+  font-weight: 600;
+  color: var(--gray);
+  max-width: 400px;
+  color: rgb(17, 17, 17);
+  
+}
+
+.hero-btn {
+  display: flex;
+  gap: 40px;
+
+}
+.hero-btn button {
+  font-size: 24px;
+}
+.secondary-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid rgb(241, 237, 237);
+  padding: 5px;
+  background-color: rgb(50, 214, 17);
+  height: 27px;
+  width: auto;
+}
+.primary-btn{
+  height: 28px;
+  width: auto;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  
+}
+.brand-icons {
+  display: flex;
+  gap: 18px;
+  filter: drop-shadow(5px 5px 5px black);
+  height: auto;
+  padding: auto;
+}
+
+
+
